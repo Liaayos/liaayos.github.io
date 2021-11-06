@@ -7,7 +7,7 @@ body {
     padding: 1em;
   }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Lobster', cursive, Helvetica, sans-serif;
     font-size: 2em;
   }
@@ -49,4 +49,67 @@ ul {
     align-items: center;
     font-size: 3em;
     margin: 0.5em;
+}
+
+#content {
+  max-width: 960px; 
+  margin: 0 auto;
+  background-color: white; 
+  padding: 1em; 
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 20px;
+  align-items: center;
+}
+
+.kfc-body{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2 ;
+  
+}
+
+.English-body {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3 ;
+  
+}
+
+.natgeo-body{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4 ;
+  
+}
+
+img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}        
+
+.kfc-image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2 ;
+}
+
+.english-image{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3 ;
+}
+
+.natgeo-image {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4 ;
+}
+
+a:hover {
+  color:fuchsia 
+}
+
+p {
+  font-family: 'Dancing Script', cursive, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
