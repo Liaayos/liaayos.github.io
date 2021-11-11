@@ -19,6 +19,10 @@ h3 {
     font-size: 2em;
 }
 
+img {
+    max-width: 900;
+}
+
 header {
     padding: 0.5em;
     text-align: center;
