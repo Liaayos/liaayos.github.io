@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Work+Sans:wght@300&display=swap');
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size:  1.6rem;
+}
+
+nav {
+    background-color: #D2DAD9;
+    font-family: Work Sans, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding:  .8rem 2%;
+    text-decoration: none;
+    color: #0B84A8;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a{
+    background-color: rgba(0, 0, 0, 0.2); color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0, 0.4); color: #fff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

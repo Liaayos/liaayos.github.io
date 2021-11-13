@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assignment portal for Lia Ayos in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Lia's weather site</title>
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="logo-image" src="../weather/images/1530371_weather_clouds_snow_winter_icon.png" alt="Logo image">
+        </picture>
+            <section class="headings">
+            <h1 class="site-name">Weather for Lovers</h1>
+            <div class="motto">For sky people</div>
+        </section>
+        
+    </header>
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a class="active" href="#">Soda Springs</a></li>
+            <li><a class="active" href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a class="active" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class=home-title>
+            <h2>
+                Preston Idaho
+            </h2>
+        </div>
+        <div class=total-image>
+            <img src="./images/thunderstorm-3625405_960_720 (1).jpg" alt="Thunderstorm Image">
+            <div class= "floating-img">
+                <img src="" alt="">
+            </div>
+        </div>
+        
+        <div class=home-paragraph>
+            <h2>
+                Five Day Forecast
+            </h2>
+        </div>
+        <div>
+            <h2>Article Title</h2>
+            <p>Article here</p>
+        </div>
+        <div class="contact-info">
+            <img src="" alt="">
+            <h2>
+                Contact Information
+            </h2>
+            <ul>
+                <li>Lia Roxana Ayos</li>
+                <li>+57 3024624578</li>
+                <li>roxana_ayos@byui.edu</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span id="year"></span><a
+                href="https://www.byui.edu/online">BYU Online
+                Learning</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./js/dates.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
