@@ -78,12 +78,35 @@ main {
     max-height: 200px;
     object-fit: cover;
 }
-.contact-info {
-    text-align: right ;
+.map-info {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
 }
  ul {
     list-style-type: none;
  }
+
+ .article-img {
+     float: right;
+     width: 50%;
+     height: 50%;
+ }
+div .text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+    padding: 0.5rem;
+}
 
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
