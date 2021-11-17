@@ -1,4 +1,47 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-    
-} /*end medium */
+    .weather-summary {
+        background: radial-gradient(#eee, #4567aa);
+        padding: 1rem;
+        opacity: 0.9;
+        box-shadow: 0, 0, 30px, #777;
+    }
+
+    .article-img {
+        float: right;
+        width: 50%;
+        height: 50%;
+    }
+
+    div .text {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .text {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.3em;
+        padding: 0.5rem;
+    }
+
+    .contact-info {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    img .map {
+        width: 100%;
+        height: auto;
+    }
+
+    #flex {
+        display: flex;
+    }
+}
+
+/*end medium */

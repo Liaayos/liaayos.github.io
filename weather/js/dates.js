@@ -29,8 +29,14 @@ month[6] = "July"
 month[7] = "August"
 month[8] = "September"
 month[9] = "October"
-month[10] = "November" 
+month[10] = "November"
 month[11] = "December"
 
 let month1 = month[today.getMonth()];
 document.getElementById("month").innerHTML = month1 + ","
+
+if (day1 == "Friday") {
+    document.getElementById('banner').style.display = "block";
+} else {
+    document.getElementById('banner').style.display = "none";
+}

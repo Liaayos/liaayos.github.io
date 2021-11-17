@@ -20,28 +20,32 @@
 </head>
 
 <body>
+    <div id="banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
 
     <header>
         <picture>
-            <img class="logo-image" src="../weather/images/1530371_weather_clouds_snow_winter_icon.png" alt="Logo image">
+            <img class="logo-image" src="../weather/images/1530371_weather_clouds_snow_winter_icon.png"
+                alt="Logo image">
         </picture>
         <section class="headings">
             <h1 class="site-name">Weather for Lovers</h1>
             <div class="motto">For sky people</div>
         </section>
-        
+
     </header>
 
 
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="preston" href="preston.html">Preston</a></li>
-            <li><a class="soda" href="#">Soda Springs</a></li>
-            <li><a class="fish" href="#">Fish Haven</a></li>
-            <li><a class="storm" href="#">Storm Center</a></li>
-            <li><a class="gallery" href="#">Gallery</a></li>
+            <li><a class="btn" href="#">Home</a></li>
+            <li><a class="btn active" href="preston.html">Preston</a></li>
+            <li><a class="btn" href="#">Soda Springs</a></li>
+            <li><a class="btn" href="#">Fish Haven</a></li>
+            <li><a class="btn" href="#">Storm Center</a></li>
+            <li><a class="btn" href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -52,75 +56,98 @@
         </div>
         <div class="first-section">
             <div class=total-image>
-                <img src="./images/thunderstorm-3625405_960_720.jpg" alt="Thunderstorm image">
+                <img class="lanscape-image" src="./images/thunderstorm-3625405_960_720.jpg" alt="Thunderstorm image">
                 <section class=weather-summary>
                     <h3>Weather Summary</h3>
                     <p>Label: Value</p>
                     <p>Label: Value</p>
                     <p>Label: Value</p>
                 </section>
-            
+
             </div>
         </div>
         <div class=day-forcast>
             <h2>
-                Five Day Forecast
+                Seven Day Forecast
             </h2>
+            <div id="flex">
+                <div class="flex-col">
+                    <span class="col-head">Monday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">5°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Tuesday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Wednesday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Thursday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Friday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Saturday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Sunday</span>
+                    <img class="sun" src="./images/sun.jpg" alt="sun">
+                    <span class="data">10°C</span>
+                </div>
+            </div>
         </div>
         <div class="text">
             <h2>Article Title</h2>
-            <img class="article-img" src="images/flash-2660929_960_720-min.jpg" alt="Thunderstorm"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta ipsum eget nunc faucibus euismod. 
+            <img class="article-img" src="images/flash-2660929_960_720-min.jpg" alt="Thunderstorm" />Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Ut porta ipsum eget nunc faucibus euismod.
             Aenean massa turpis, cursus sed urna nec, gravida interdum enim. Sed at aliquam nisl, at rutrum quam.
-            Mauris luctus pretium mi, at accumsan nunc tristique at. Duis mauris arcu, fringilla nec tincidunt non, 
-            molestie in massa. Nam nec enim eu mi volutpat elementum quis varius nulla. Integer consectetur vitae 
-            quam in venenatis. Nullam vestibulum volutpat vulputate. Nullam in imperdiet nunc. Donec sed augue malesuada, 
-            laoreet lorem in, dapibus nulla. Praesent aliquam vulputate massa, in congue ipsum varius quis. Donec sodales
-             scelerisque laoreet.
+            Mauris luctus pretium mi, at accumsan nunc tristique at. Duis mauris arcu, fringilla nec tincidunt non,
+            molestie in massa. Nam nec enim eu mi volutpat elementum quis varius nulla. Integer consectetur vitae
+            quam in venenatis. Nullam vestibulum volutpat vulputate. Nullam in imperdiet nunc. Donec sed augue
+            malesuada,
+            laoreet lorem in, dapibus nulla. Praesent aliquam vulputate massa, in congue ipsum varius quis. Donec
+            sodales
+            scelerisque laoreet.
         </div>
-        <div class="map-info">
-            <picture>
-                <img src="./images/map.PNG" alt="">
-            </picture>
-            <section class="contact-info">
-                <h2>
+        <div class="contact-info">
+            <section class="contact">
+                <h3>
                     Contact Information
-                </h2>
+                </h3>
                 <div>
-                    <ul>
-                        <li>Lia Roxana Ayos</li>
-                        <li>+57 3024624578</li>
-                        <li>roxana_ayos@byui.edu</li>
-                    </ul>
+                    <br>Lia Roxana Ayos
+                    <br>+57 3024624578
+                    <br>roxana_ayos@byui.edu
                 </div>
                 <div class="social">
-                    <a
-                      href="https://es-la.facebook.com/"
-                      target="_blank"
-                      ><img
-                        src="./images/facebook.png"
-                        alt="Facebook icon"
-                    /></a>
-                    <a
-                      href="https://twitter.com/iniciarsesion?lang=es"
-                      target="_blank"
-                      ><img
-                        src="./images/twitter.png"
-                        alt="twiter icon"
-                    /></a>
-                    <a
-                      href="https://www.youtube.com/"
-                      target="_blank"
-                      ><img
-                        src="./images/youtube.png"
-                        alt="Youtube icon"
-                    /></a>
-                  </div>
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/facebook.png"
+                            alt="Facebook icon" /></a>
+                    <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img src="./images/twitter.png"
+                            alt="twiter icon" /></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
+                            alt="Youtube icon" /></a>
+                </div>
             </section>
+            <picture class="map">
+                <img src="./images/map.PNG" alt="map">
+            </picture>
         </div>
     </main>
     <footer>
-        <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span id="year"></span><a
-                href="https://www.byui.edu/online"> BYU Online
+        <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span
+                id="year"></span><a href="https://www.byui.edu/online"> BYU Online
                 Learning</a></p>
         <p id="lastModified"></p>
     </footer>
