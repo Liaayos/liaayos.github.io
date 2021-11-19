@@ -55,16 +55,19 @@
             </h2>
         </div>
         <div class="first-section">
-            <div class=total-image>
-                <img class="lanscape-image" src="./images/thunderstorm-3625405_960_720.jpg" alt="Thunderstorm image">
-                <section class=weather-summary>
-                    <h3>Weather Summary</h3>
-                    <p>Label: Value</p>
-                    <p>Label: Value</p>
-                    <p>Label: Value</p>
-                </section>
-
-            </div>
+            <picture class=total-image>
+                <source srcset="images/large.jpg" media="(max-width: 1500px)">
+                <source srcset="../images/medium.jpg" media="(max-width: 700px)">
+                <source srcset="../images/small.jpg " media="(max-width: 380px)">
+                <img src="./images/original.jpg" alt="Thunderstorm image">
+                
+            </picture>
+            <section class=weather-summary>
+                <h3>Weather Summary</h3>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+            </section>
         </div>
         <div class=day-forcast>
             <h2>

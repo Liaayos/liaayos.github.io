@@ -124,11 +124,7 @@ img {
 
 .logo-image {
     padding: 0.5em;
-    order: 1;
-}
-
-.site-name {
-    order: 2;
+    
 }
 
 .motto {
@@ -150,11 +146,6 @@ ul {
 .contact-info {
     font-family: 'Work Sans', sans-serif;
     font-size: 1em;
-}
-
-.lanscape-image {
-    width: 100%;
-    height: fit-content;
 }
 
 .social {
@@ -204,6 +195,15 @@ img.sun {
     font-weight: 600;
     border-radius: 30px;
 }
+
+main figure.total-image {
+    width: 100%;
+    margin: 0 0 0;
+
+}
+ main figure.total-image img {
+     width: 100%;
+ }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
