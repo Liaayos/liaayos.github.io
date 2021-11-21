@@ -26,7 +26,7 @@
 
     <header>
         <picture>
-            <img class="logo-image" src="../weather/images/1530371_weather_clouds_snow_winter_icon.png"
+            <img class="logo-image" src="./images/1530371_weather_clouds_snow_winter_icon.png"
                 alt="Logo image">
         </picture>
         <section class="headings">
@@ -56,17 +56,19 @@
         </div>
         <div class="first-section">
             <picture class=total-image>
-                <source srcset="images/large.jpg" media="(max-width: 1500px)">
-                <source srcset="../images/medium.jpg" media="(max-width: 700px)">
-                <source srcset="../images/small.jpg " media="(max-width: 380px)">
+                <source srcset="./images/small.jpg" media="(max-width: 380px)">
+                <source srcset="./images/medium.jpg" media="(max-width: 700px)">
+                <source srcset="./images/large.jpg" media="(max-width: 1500px)">
                 <img src="./images/original.jpg" alt="Thunderstorm image">
                 
             </picture>
             <section class=weather-summary>
                 <h3>Weather Summary</h3>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
-                <p>Label: Value</p>
+                <p>Currently: <span id="temperature">38</span>°F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>High: 41°F</p>
+                <p>Humidity: 50%</p>
+                <p>Wind Speed: <span id="windspeed">10</span>mph</p>
             </section>
         </div>
         <div class=day-forcast>
@@ -157,6 +159,7 @@
 
     <script src="./js/dates.js"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/windchill.js"></script>
 </body>
 
 </html>
