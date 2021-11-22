@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+img {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0%;
+}
