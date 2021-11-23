@@ -92,13 +92,10 @@
     }
 
    
-    div picture img:hover, figcaption:hover {
+    div picture img:hover, div picture p:hover {
         box-shadow:  0 0 50px rgb(168, 163, 163);
     }
 
-    figcaption {
-        display: block;
-    }
 }
 
 /*end large */
