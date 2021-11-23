@@ -205,6 +205,26 @@ main figure.total-image {
      width: 100%;
  }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding: 20px;
+}
+
+picture img {
+    width: 100%;
+    height: 80%;
+}
+
+figcaption {
+    display: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

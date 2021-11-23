@@ -84,6 +84,21 @@
         display: flex;
     }
 
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        padding: 20px;
+    }
+
+   
+    picture img:hover, figcaption:hover {
+        box-shadow:  0 0 50px rgb(168, 163, 163);
+    }
+
+    figcaption {
+        display: block;
+    }
 }
 
 /*end large */
