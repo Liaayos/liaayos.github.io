@@ -87,12 +87,11 @@
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2em;
-        padding: 20px;
+        
     }
 
    
-    div picture img:hover, div picture p:hover {
+    div figure img:hover, div figure figcaption:hover {
         box-shadow:  0 0 50px rgb(168, 163, 163);
     }
 
