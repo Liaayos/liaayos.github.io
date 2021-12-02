@@ -48,6 +48,28 @@
         grid-gap: 2em;
         padding: 20px;
     }
+
+    /*--------------HOME---------------*/
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cards section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards section:nth-child(odd) .image {
+		grid-column: 1 / 2;
+        grid-row: 1 / 2;
+	}
+
+	.cards section:nth-child(odd) .data {
+		grid-column: 2 / 3;
+        grid-row: 1 / 2;
+	}
 }
 
 
