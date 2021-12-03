@@ -64,52 +64,43 @@
             </picture>
             <section class=weather-summary>
                 <h3>Weather Summary</h3>
-                <p>Currently: <span id="temperature">38</span>°F</p>
+                <p>Current Condition: <span id="current-condition"></span></p>
+                <p>Currently: <span id="temperature"></span>°F</p>
+                <p>High: <span id='high'></span>°F</p>
                 <p>Wind Chill: <span id="windchill"></span></p>
-                <p>High: 41°F</p>
-                <p>Humidity: 50%</p>
-                <p>Wind Speed: <span id="windspeed">10</span>mph</p>
+                <p>Humidity: <span id="humidity"> %</span></p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
             </section>
         </div>
         <div class=day-forcast>
             <h2>
-                Seven Day Forecast
+                Five Day Forecast
             </h2>
             <div id="flex">
                 <div class="flex-col">
-                    <span class="col-head">Monday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">5°C</span>
+                    <span class="col-head" id="name1"></span>
+                    <img class="sun" id="1-day">
+                    <span class="data" id="day1">°F</span>
                 </div>
                 <div class="flex-col">
-                    <span class="col-head">Tuesday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
+                    <span class="col-head" id="name2"></span>
+                    <img class="sun" id="2-day">
+                    <span class="data" id="day2">°F</span>
                 </div>
                 <div class="flex-col">
-                    <span class="col-head">Wednesday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
+                    <span class="col-head" id="name3"></span>
+                    <img class="sun" id="3-day">
+                    <span class="data" id="day3">°F</span>
                 </div>
                 <div class="flex-col">
-                    <span class="col-head">Thursday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
+                    <span class="col-head" id="name4"></span>
+                    <img class="sun" id="4-day">
+                    <span class="data" id="day4">°F</span>
                 </div>
                 <div class="flex-col">
-                    <span class="col-head">Friday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Saturday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
-                </div>
-                <div class="flex-col">
-                    <span class="col-head">Sunday</span>
-                    <img class="sun" src="./images/sun.jpg" alt="sun">
-                    <span class="data">10°C</span>
+                    <span class="col-head" id="name5"></span>
+                    <img class="sun" id="5-day">
+                    <span class="data" id="day5">°F</span>
                 </div>
             </div>
         </div>
@@ -149,12 +140,15 @@
                 <img src="./images/map.PNG" alt="map">
             </picture>
         </div>
+        <p>
+            Alll the weather information comes from openweathermap.org, please visit in the link below.
+        </p>
     </main>
     <footer>
         <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span
-                id="year"></span><a href="https://www.byui.edu/online"> BYU Online
+                id="year"></span><a href="https://www.byui.edu/online" target="blank"> BYU Online
                 Learning</a></p>
-        <p id="lastModified"></p>
+        <p id="lastModified"></p> <a href="https://openweathermap.org/" target="blank">openweathermap.org</a>
     </footer>
 
     <script src="./js/dates.js"></script>
