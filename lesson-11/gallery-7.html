@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assignment portal for Lia Ayos in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Lia's weather site</title>
+
+    <!-- STYLE SHEETS -->
+    <link href="./CSS/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="./CSS/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="./CSS/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="./CSS/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <picture>
+            <img class="logo-image" src="./images/1530371_weather_clouds_snow_winter_icon.png"
+                alt="Logo image">
+        </picture>
+        <section class="headings">
+            <h1 class="site-name">Weather for Lovers</h1>
+            <div class="motto">For sky people</div>
+        </section>
+
+    </header>
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="btn" href="#">Home</a></li>
+            <li><a class="btn" href="preston.html">Preston</a></li>
+            <li><a class="btn" href="#">Soda Springs</a></li>
+            <li><a class="btn" href="#">Fish Haven</a></li>
+            <li><a class="btn" href="#">Storm Center</a></li>
+            <li><a class="btn active" href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class=home-title>
+            <h2>
+                Weather Gallery
+            </h2>
+        </div>
+        <div class="gallery-grid">
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/clouds.jpg" alt="Clouds">
+                <figcaption>
+                    White clouds in a sunny day.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/cloudsInRed.jpg" alt="Clouds in Red Sunset.">
+                <figcaption>
+                    Dark clouds in a red sunset.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/cyclone.jpg" alt="Cyclone">
+                <figcaption>
+                    A house being taken by a cyclone.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/forest.jpg" alt="Forest with fog.">
+                <figcaption>
+                    Fog getting closer in a Forest.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/mountainsSunset.jpg" alt="Sunset in Mountain.">
+                <figcaption>
+                    Red sunset with birds and far mountains.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/rainbow.jpg" alt="Rainbow in landscape">
+                <figcaption>
+                    Beautiful rainbow in a landscape.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/raining.jpg" alt="Raining">
+                <figcaption>
+                    Far raining in an landscape.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/sunriseInCave.jpg" alt="Sunrise in a cave">
+                <figcaption>
+                    A sunrise from a cave with a cascade.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/placeholder.png" data-src="./images/thunderstormWithOcean.jpg" alt="Thunderstorm in the ocean.">
+                <figcaption>
+                    A far thunderstorm with a near calm ocean.
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span
+                id="year"></span><a href="https://www.byui.edu/online"> BYU Online
+                Learning</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./js/dates.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>

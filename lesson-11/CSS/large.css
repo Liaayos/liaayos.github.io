@@ -1,0 +1,130 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+    }
+
+    .total-image {
+        margin: 10px auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        background: radial-gradient(#eee, #4567aa);
+        padding: 1rem;
+        opacity: 0.7;
+    }
+
+    .article-img {
+        float: right;
+        width: 50%;
+        height: 50%;
+    }
+
+    div .text {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .text {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.3em;
+        padding: 0.5rem;
+    }
+
+    .contact-info {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact {
+        order: 2;
+    }
+
+    .map {
+        order: 1;
+    }
+
+    .first-section {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    #flex {
+        display: flex;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+   
+    div figure img:hover, div figure figcaption:hover {
+        box-shadow:  0 0 50px rgb(168, 163, 163);
+    }
+
+    /*--------------HOME---------------*/
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cards section:nth-child(odd) .image {
+        grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+
+	.cards section:nth-child(odd) .data {
+        grid-column: 1 / 2 ;
+		grid-row: 1 / 2;
+	}
+
+    .cards section div img {
+        margin-top: 20px;
+        max-width: 250px;
+        padding: 20px;
+        
+    }
+}
+
+
+
+/*end large */

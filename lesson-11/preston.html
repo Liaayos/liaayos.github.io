@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assignment portal for Lia Ayos in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Lia's weather site</title>
+
+    <!-- STYLE SHEETS -->
+    <link href="./CSS/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="./CSS/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="./CSS/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="./CSS/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <picture>
+            <img class="logo-image" src="./images/1530371_weather_clouds_snow_winter_icon.png"
+                alt="Logo image">
+        </picture>
+        <section class="headings">
+            <h1 class="site-name">Weather for Lovers</h1>
+            <div class="motto">For sky people</div>
+        </section>
+
+    </header>
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="btn" href="#">Home</a></li>
+            <li><a class="btn active" href="preston.html">Preston</a></li>
+            <li><a class="btn" href="#">Soda Springs</a></li>
+            <li><a class="btn" href="#">Fish Haven</a></li>
+            <li><a class="btn" href="#">Storm Center</a></li>
+            <li><a class="btn" href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class=home-title>
+            <h2>
+                Preston Idaho
+            </h2>
+        </div>
+        <div class="first-section">
+            <picture class=total-image>
+                <source srcset="./images/small.jpg" media="(max-width: 380px)">
+                <source srcset="./images/medium.jpg" media="(max-width: 700px)">
+                <source srcset="./images/large.jpg" media="(max-width: 1500px)">
+                <img src="./images/original.jpg" alt="Thunderstorm image">
+                
+            </picture>
+            <section class=weather-summary>
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current-condition"></span></p>
+                <p>Current Temp: <span id="temperature"></span>°F</p>
+                <p>High: <span id='high'></span>°F</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            </section>
+        </div>
+        <div class=day-forcast>
+            <h2>
+                Five Day Forecast
+            </h2>
+            <div id="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="name1"></span>
+                    <img class="sun" id="1-day" src="" alt="">
+                    <p><span class="data" id="day1"></span> °F</p>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="name2"></span>
+                    <img class="sun" id="2-day" src="" alt="">
+                    <p><span class="data" id="day2"></span>°F</p>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="name3"></span>
+                    <img class="sun" id="3-day" src="" alt="">
+                    <p><span class="data" id="day3"></span>°F</p>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="name4"></span>
+                    <img class="sun" id="4-day" src="" alt="">
+                    <p><span class="data" id="day4"></span>°F</p>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="name5"></span>
+                    <img class="sun" id="5-day" src="" alt="">
+                    <p><span class="data" id="day5"></span>°F</p>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <h2>Article Title</h2>
+            <img class="article-img" src="images/flash-2660929_960_720-min.jpg" alt="Thunderstorm" />Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Ut porta ipsum eget nunc faucibus euismod.
+            Aenean massa turpis, cursus sed urna nec, gravida interdum enim. Sed at aliquam nisl, at rutrum quam.
+            Mauris luctus pretium mi, at accumsan nunc tristique at. Duis mauris arcu, fringilla nec tincidunt non,
+            molestie in massa. Nam nec enim eu mi volutpat elementum quis varius nulla. Integer consectetur vitae
+            quam in venenatis. Nullam vestibulum volutpat vulputate. Nullam in imperdiet nunc. Donec sed augue
+            malesuada,
+            laoreet lorem in, dapibus nulla. Praesent aliquam vulputate massa, in congue ipsum varius quis. Donec
+            sodales
+            scelerisque laoreet.
+        </div>
+        <div class="contact-info">
+            <section class="contact">
+                <h3>
+                    Contact Information
+                </h3>
+                <div>
+                    <br>Lia Roxana Ayos
+                    <br>+57 3024624578
+                    <br>roxana_ayos@byui.edu
+                </div>
+                <div class="social">
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/facebook.png"
+                            alt="Facebook icon" /></a>
+                    <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img src="./images/twitter.png"
+                            alt="twiter icon" /></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png"
+                            alt="Youtube icon" /></a>
+                </div>
+            </section>
+            <picture class="map">
+                <img src="./images/map.PNG" alt="map">
+            </picture>
+        </div>
+        <p>
+            Alll the weather information comes from openweathermap.org, please visit in the link below.
+        </p>
+    </main>
+    <footer>
+        <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span
+                id="year"></span><a href="https://www.byui.edu/online" target="blank"> BYU Online
+                Learning</a></p>
+        <p id="lastModified"></p> <a href="https://openweathermap.org/" target="blank">openweathermap.org</a>
+    </footer>
+
+    <script src="./js/dates.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/windchill.js"></script>
+</body>
+
+</html>
