@@ -21,6 +21,7 @@ nav button {
 nav {
     background-color: #D2DAD9;
     font-family: Work Sans, sans-serif;
+    font-weight: bold
 }
 
 nav ul {
@@ -107,6 +108,7 @@ footer {
     border-radius: 30px;
     text-align: center;
     bottom: 0;
+    font-weight: bold
 }
 
 p {
