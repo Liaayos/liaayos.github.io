@@ -1,36 +1,18 @@
-function toggleMenu() {
-  document.getElementById("primaryNav").classList.toggle("hide");
-}
-
-// Add active class to the current button (highlight it)
-var header = document.getElementById("primaryNav");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
-
-function selectResponse() {
-  const s = document.querySelector('#selected')
-  const sel = document.querySelector('#selectbrowser');
-  s.style.display = "block";
-  s.textContent = sel.value;
-
-}
-
-
 /*--------------WEATHER SUMMARY---------*/
 
+switch (document.getElementById('city-name').textContent) {
+  case 'Soda Springs':
+    var cityId = '5607916'
+    break
+  case 'Fish Haven':
+    var cityId = '5585010'
+    break
+  case 'Preston Idaho':
+    var cityId = '5604473'
+    break
+}
 
-
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=08af901bcdaa17bfeda72600c3b6a3a5';
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityId + '&appid=08af901bcdaa17bfeda72600c3b6a3a5&units=imperial';
 
 fetch(apiURL)
   .then((response) => response.json())

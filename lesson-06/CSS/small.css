@@ -322,6 +322,24 @@ form input.submitBtn {
     box-shadow: 0px 0px 20px;
 }
 
+/*------UPCOMING EVENTS----------*/
+
+div.upcoming-events {
+    max-width: 400px;
+    text-align: center;
+    background-color:#D2DAD9;
+    box-shadow: 0px 0px 20px;
+    border: solid 10px;
+    margin: 0 auto;
+    margin-top: 2em;
+
+
+}
+
+
+.openweather {
+    font-size: 1.5em;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

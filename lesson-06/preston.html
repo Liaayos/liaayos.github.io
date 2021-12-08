@@ -41,8 +41,8 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
             <li><a class="btn" href="home.html">Home</a></li>
-            <li><a class="btn" href="preston.html">Preston</a></li>
-            <li><a class="btn active" href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="btn active" href="preston.html">Preston</a></li>
+            <li><a class="btn" href="sodasprings.html">Soda Springs</a></li>
             <li><a class="btn" href="fishhaven.html">Fish Haven</a></li>
             <li><a class="btn" href="stormcenter.html">Storm Center</a></li>
             <li><a class="btn" href="gallery-7.html">Gallery</a></li>
@@ -50,9 +50,7 @@
     </nav>
     <main>
         <div class=home-title>
-            <h2>
-                Preston Idaho
-            </h2>
+            <h2 id='city-name'>Preston Idaho</h2>
         </div>
         <div class="first-section">
             <picture class=total-image>
@@ -104,10 +102,28 @@
                 </div>
             </div>
         </div>
-        <div class="UpcomingEvents">
+        <div class='upcoming-events' id="upcoming-events-preston">
             <h2>Upcoming Events:</h2>
             
         </div>
+        <div class="text">
+            <h2>Article Title</h2>
+            <img class="article-img" src="images/flash-2660929_960_720-min.jpg" alt="Thunderstorm" />Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Ut porta ipsum eget nunc faucibus euismod.
+            Aenean massa turpis, cursus sed urna nec, gravida interdum enim. Sed at aliquam nisl, at rutrum quam.
+            Mauris luctus pretium mi, at accumsan nunc tristique at. Duis mauris arcu, fringilla nec tincidunt non,
+            molestie in massa. Nam nec enim eu mi volutpat elementum quis varius nulla. Integer consectetur vitae
+            quam in venenatis. Nullam vestibulum volutpat vulputate. Nullam in imperdiet nunc. Donec sed augue
+            malesuada,
+            laoreet lorem in, dapibus nulla. Praesent aliquam vulputate massa, in congue ipsum varius quis. Donec
+            sodales
+            scelerisque laoreet.
+        </div>
+        <p>
+            Alll the weather information comes from openweathermap.org, please visit in the link below.
+        </p>
+    </main>
+    <footer>
         <div class="contact-info">
             <section class="contact">
                 <h3>
@@ -128,23 +144,20 @@
                 </div>
             </section>
             <picture class="map">
-                <img src="./images/map.PNG" alt="map">
+                <img src="./images/map.jpg" alt="map">
             </picture>
         </div>
-        <p>
-            Alll the weather information comes from openweathermap.org, please visit in the link below.
-        </p>
-    </main>
-    <footer>
         <p id="copyright">&copy; <span id="dayweek"></span> <span id="day"></span> <span id="month"></span> <span
                 id="year"></span><a href="https://www.byui.edu/online" target="blank"> BYU Online
                 Learning</a></p>
-        <p id="lastModified"></p> <a href="https://openweathermap.org/" target="blank">openweathermap.org</a>
-    </footer>
+                <p id="lastModified"></p> <span class='openweather'><a href="https://openweathermap.org/" target="blank">www.openweathermap.org</a></span>
+            </footer>
 
     <script src="./js/dates.js"></script>
     <script src="./js/scripts.js"></script>
     <script src="./js/windchill.js"></script>
+    <script src="./js/weathersummary.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
