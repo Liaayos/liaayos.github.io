@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assignment portal for Lia Ayos in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Scoots home page</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/small.css" rel="stylesheet">
+    <link href="./css/medium.css" rel="stylesheet">
+    <link href="./css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <section class="headings">
+            <picture>
+                <img class="logo-image" src="./site plan/images-site-plan/logo.png" alt="Logo image">
+            </picture>
+        </section>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="btn active" href="./index.html">Home</a></li>
+                <li><a class="btn" href="rentals.html">Rentals</a></li>
+                <li><a class="btn" href="reservations.html">Reservations</a></li>
+                <li><a class="btn" href="tours.html">Tours</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="home">
+
+            <section class=weather-summary>
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current-condition"></span></p>
+                <p>Current Temp: <span id="temperature"></span>°F</p>
+                <p>High: <span id='high'></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            </section>
+
+            <section class="quick-rental">
+                <h2>Quick Rentals Overview</h2>
+                <div class="summary-info"><img src="./images-scoots/chart.JPG" alt="Rentals Chart"></div>
+            </section>
+
+
+            <form method="get" action="thanks.html">
+                <fieldset name="applicant-info">
+                    <legend>Rental Reservation</legend>
+                    <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,30}"
+                            title="5 to 30 letters" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zipCode" pattern="[0-9]{5}"
+                            title="5 digit number" required></label>
+
+                    <label class="top" id="generate" required>Rentals*
+                        <select name="rental-choice" id="options">
+                            <option value="">Choose Your Rental</option>
+                            <option value="honda-motor" id='honda-motor'>Honda Motor</option>
+                            <option value="ATV-Side-by-Side">ATV Side by Side</option>
+                            <option value="jeep-rentals">Jeep Rentals</option>
+                        </select>
+                    </label>
+
+                    <label class="top" id="response" required>
+                        Type
+
+                        <select id="bikes">
+                            <option value="">Choose Type*</option>
+                        </select>
+                    </label>
+
+                    <input type="submit" value="Send Information" class="submitBtn">
+
+                </fieldset>
+            </form>
+
+            <section>
+                <h2 class="beach-title">Gallery</h2>
+                <section class="beach-images">
+                    <div><img src="./images-scoots/island1.jpg" alt="Island"></div>
+                    <div><img src="./images-scoots/island2.jpg" alt="Island"></div>
+                    <div><img src="./images-scoots/island3.jpg" alt="Island"></div>
+
+                </section>
+            </section>
+
+        </div>
+
+        <footer>
+            <div class="contact-info">
+                <section class="contact">
+                    <h3>
+                        Contact Information
+                    </h3>
+                    <div class="contact-content">
+                        <br>Lia Roxana Ayos
+                        <br>+57 3024624578
+                        <br>roxana_ayos@byui.edu
+                    </div>
+                    <div class="social">
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./images-scoots/facebook.png"
+                                alt="Facebook icon" /></a>
+                        <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img
+                                src="./images-scoots/twitter.png" alt="twiter icon" /></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./images-scoots/youtube.png"
+                                alt="Youtube icon" /></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="copyright">
+                <p id="copyright">&copy;<a href="https://www.byui.edu/online" target="blank"> BYU Online
+                        Learning</a></p>
+                <span class='openweather'><a href="https://openweathermap.org/"
+                        target="blank">www.openweathermap.org</a></span>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/weathersummary.js"></script>
+
+</body>
+
+</html>

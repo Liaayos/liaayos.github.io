@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Voltaire&display=swap');
+
+:root {
+
+    --primary-color: #FA7C96;
+    --secondary-color: #6EC4D8;
+    --accent1-color: #FFF7C0;
+    --accent2-color: #66AB8C;
+
+    --heading-font: "Covered By Your Grace";
+    --paragraph-font: "Voltaire";
+
+    --headline-color-on-white: black;
+    --headline-color-on-color: black;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: black;
+    --text-background-color: #6EC4D8;
+    --nav-link-color: #6EC4D8;
+    --nav-background-color: #FFF7C0;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #FA7C96;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+html {
+    background-color: var(--primary-color);
+}
+
+body {
+    max-width: 1000px;
+    margin: 5em auto;
+    background-color: #FFF7C0;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    font-size: 2em;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--text-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+    font-size: 3em;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+p.colored {
+    background-color: var(--text-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+    font-size: 1.5em;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: #FA7C96;
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(8, 9%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap>div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #999;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #999;
+    line-height: 3em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #999;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+}

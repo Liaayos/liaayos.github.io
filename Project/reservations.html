@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Assignment portal for Lia Ayos in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Scoots home page</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/small.css" rel="stylesheet">
+    <link href="./css/medium.css" rel="stylesheet">
+    <link href="./css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <section class="headings">
+            <picture>
+                <img class="logo-image" src="./site plan/images-site-plan/logo.png" alt="Logo image">
+            </picture>
+        </section>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="btn" href="./index.html">Home</a></li>
+                <li><a class="btn" href="rentals.html">Rentals</a></li>
+                <li><a class="btn active" href="reservations.html">Reservations</a></li>
+                <li><a class="btn" href="tours.html">Tours</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="reservation-page">
+            
+            
+            <form method="get" action="thanks.html">
+                <fieldset name="applicant-info">
+                    <legend>Rental Reservation</legend>
+                    <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z]{5,30}"
+                        title="5 to 30 letters" required></label>
+                        <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Zip Code* <input type="number" name="zipCode" pattern="[0-9]{5}"
+                            title="5 digit number" required></label>
+                            
+                            <label class="top" id="generate" required>Rentals*
+                                <select name="rental-choice" id="options">
+                                    <option value="">Choose Your Rental</option>
+                                    <option value="honda-motor" id='honda-motor'>Honda Motor</option>
+                                    <option value="ATV-Side-by-Side">ATV Side by Side</option>
+                                    <option value="jeep-rentals">Jeep Rentals</option>
+                                </select>
+                            </label>
+                            
+                            
+                            <label class="top" id="response" required>
+                                Type
+                                
+                                <select id="bikes">
+                                    <option value="">Choose Type*</option>
+                                </select>
+                            </label>
+                            
+                            <label class="top">Arrival Date<input type="date" name="completeDate"></label>
+                            
+                            <label class="top">Leaving Date<input type="date" name="completeDate"></label>
+                            
+                        </fieldset>
+                        
+                        <fieldset name="additionalInfo">
+                            <legend>Additional Information or Comments</legend>
+                            <label>
+                                <textarea rows="4" cols="33"></textarea>
+                            </label>
+                        </fieldset>
+                        
+                        <input type="submit" value="Send Information" class="submitBtn">
+                        
+                    </form>
+                    <div class="rental-agreement">
+                        <h2>Rental Agreement</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit egestas ante cum proin metus iaculis,
+                            dignissim sed at himenaeos tempor imperdiet neque erat nibh auctor vestibulum magna. Magna
+                            condimentum commodo himenaeos suspendisse eros nascetur montes porttitor diam at, conubia
+                            fringilla sed mollis senectus venenatis torquent dis phasellus, natoque varius eget fames
+                            pretium sem magnis dapibus posuere. Iaculis venenatis phasellus sem cum faucibus torquent
+                            tristique interdum nibh, quam nisi tempor vivamus elementum convallis platea sed, volutpat
+                            molestie orci urna bibendum massa augue sagittis.
+        
+                            At nibh proin mauris sociosqu nostra tellus nullam lobortis, eget erat hendrerit imperdiet
+                            feugiat ante torquent. Libero vulputate id augue ridiculus pretium sed malesuada eu, fusce
+                            aenean cum integer massa platea congue pulvinar, non phasellus ut convallis habitant felis
+                            sapien. Per primis justo luctus tincidunt nisi lacus etiam nulla augue nunc habitasse sociis
+                            eget, arcu platea faucibus mus dis potenti natoque risus conubia ad netus viverra, suspendisse
+                            a ac in magna enim pellentesque tellus phasellus fringilla orci ornare.
+        
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit egestas ante cum proin metus iaculis,
+                            dignissim sed at himenaeos tempor imperdiet neque erat nibh auctor vestibulum magna. Magna
+                            condimentum commodo himenaeos suspendisse eros nascetur montes porttitor diam at, conubia
+                            fringilla sed mollis senectus venenatis torquent dis phasellus, natoque varius eget fames
+                            pretium sem magnis dapibus posuere. Iaculis venenatis phasellus sem cum faucibus torquent
+                            tristique interdum nibh, quam nisi tempor vivamus elementum convallis platea sed, volutpat
+                            molestie orci urna bibendum massa augue sagittis.At nibh proin mauris sociosqu nostra
+                        </p>
+        
+                    </div>
+
+        </div>
+
+        <footer>
+            <div class="contact-info">
+                <section class="contact">
+                    <h3>
+                        Contact Information
+                    </h3>
+                    <div class="contact-content">
+                        <br>Lia Roxana Ayos
+                        <br>+57 3024624578
+                        <br>roxana_ayos@byui.edu
+                    </div>
+                    <div class="social">
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./images-scoots/facebook.png"
+                                alt="Facebook icon" /></a>
+                        <a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><img
+                                src="./images-scoots/twitter.png" alt="twiter icon" /></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./images-scoots/youtube.png"
+                                alt="Youtube icon" /></a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="copyright">
+                <p id="copyright">&copy;<a href="https://www.byui.edu/online" target="blank"> BYU Online
+                        Learning</a></p>
+                <span class='openweather'><a href="https://openweathermap.org/"
+                        target="blank">www.openweathermap.org</a></span>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/weathersummary.js"></script>
+
+</body>
+
+</html>
